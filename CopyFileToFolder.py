@@ -5,8 +5,11 @@ import os
 #Se crea una unidad de red que apunte a esa ruta y se le asigna la letra G a la unidad.
 #En el ejemplo el usuario y clave seria invitado
 #Se crea la carpeta exe1 en la unidad C
+#Seria interesante cada cierto tiempo verificar si hay alguna actualización. 
+#Se podria por ejemplo analizar el md5 de los dos archivos, si es diferente entonces copiarlo con su respectivo md5
 
-src="G:"         #ejemplo: Unidad compartida
+
+src="U:"         #ejemplo: Unidad compartida
 dest="C:\exe1"   #Ruta creada en la unidad C
 toSearch="login.exe"                                  #example: "archivo.extension"
 folder=file=0
