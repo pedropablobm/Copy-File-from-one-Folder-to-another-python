@@ -6,7 +6,7 @@ import os
 #En el ejemplo el usuario y clave seria invitado
 #Se crea la carpeta exe1 en la unidad C
 #Seria interesante cada cierto tiempo verificar si hay alguna actualización. 
-#Se podria por ejemplo analizar el md5 de los dos archivos, si es diferente entonces copiarlo con su respectivo md5
+#Se podria por ejemplo analizar el MD5 o SHA256 de los dos archivos, si es diferente entonces remplazarlo.
 
 
 src="U:"         #ejemplo: Unidad compartida
