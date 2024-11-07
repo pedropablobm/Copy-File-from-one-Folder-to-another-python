@@ -1,15 +1,15 @@
 import shutil
 import os
 
-src="SOURCE OF DIRECTORY WHERE YOU WANT TO SEARCH"              #example: D:\demo
-dest="DESTINATION DIRECTORY WHERE YOU WANT TO COPY THAT FILE"   #example: D:\DemoCopy
-toSearch="FILE TO BE SEARCHED"                                  #example: "Dataset.csv"
+src="G:"         #ejemplo: Unidad compartida
+dest="C:\exe1"   #Ruta creada en la unidad C
+toSearch="login.exe"                                  #example: "archivo.extension"
 folder=file=0
 
 try:
     os.makedirs(dest)
 except:
-    print("ALREADY EXISTERD")
+    print("ARCHIVO EXISTE")
 def checkFile(src,searchFile):                                  #Recursive Fuction to Check the file in each Folder
     global folder,file
     src_file = os.listdir(src)                                  #listDir returns all files and folder within the src in src_file
@@ -26,5 +26,3 @@ def checkFile(src,searchFile):                                  #Recursive Fucti
 checkFile(src,toSearch)
 print("FOLDER",folder)                                            #COUNT OF TOTAL FOLDERS
 print("FILE",file)                                                #COUNT OF TOTAL FILES
-
-
