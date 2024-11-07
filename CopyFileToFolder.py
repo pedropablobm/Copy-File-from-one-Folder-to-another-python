@@ -1,6 +1,11 @@
 import shutil
 import os
 
+#Se tiene el archivo en la ruta \\192.168.14.70\login
+#Se crea una unidad de red que apunte a esa ruta y se le asigna la letra G a la unidad.
+#En el ejemplo el usuario y clave seria invitado
+#Se crea la carpeta exe1 en la unidad C
+
 src="G:"         #ejemplo: Unidad compartida
 dest="C:\exe1"   #Ruta creada en la unidad C
 toSearch="login.exe"                                  #example: "archivo.extension"
